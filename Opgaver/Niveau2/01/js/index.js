@@ -1,20 +1,12 @@
-const buttons = document.querySelector('#buttons');
+const buttonContainer = document.querySelector('#buttons');
 const ButtonHighlightColor = 'yellow';
+const buttonElementNodeList = document.querySelectorAll('button');                    // variabel med button nodelist
 
-function buttonHighlight(event){
-    
-    if(event.target.tagName === 'BUTTON'){                              // hvis target er et BUTTON tag ==>
-        let highlightElement = document.querySelector('.highlight');    // highlightElement = <button class="" style="">D</button>
-        
-        if(highlightElement){                                           // fjerner color og className
-            highlightElement.style.backgroundColor = '';
-            highlightElement.classList.remove('highlight');
-        };
-        
-        event.target.classList.add('highlight');                        // tilføjer className til button tag
-        event.target.style.backgroundColor = ButtonHighlightColor;      // tilføjer color til target
+buttonContainer.addEventListener('click', event => {
+
+    if(event.target.localName === 'button'){
+        buttonElementNodeList.forEach(button => button.removeAttribute('style'));
+        event.target.style.backgroundColor = ButtonHighlightColor;
     };
-    
-};
 
-buttons.addEventListener('click', event => buttonHighlight(event));
+});
