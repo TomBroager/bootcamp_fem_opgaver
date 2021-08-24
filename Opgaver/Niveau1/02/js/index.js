@@ -13,5 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultat = beregnForhold(4, 3)
 
     console.log(resultat);
-
 });
