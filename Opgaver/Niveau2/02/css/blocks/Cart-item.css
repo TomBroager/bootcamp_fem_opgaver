@@ -1,0 +1,26 @@
+.Cart-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.Cart-item__title {
+	width: 10rem;
+	margin-left: 2rem;
+	margin-right: 6rem;
+}
+
+.Cart-item__img {
+	display: block;
+	height: 5rem;
+    width: 8rem;
+	object-fit: cover;
+	border-radius: 1rem;
+    border: 3px solid black;
+}
+
+.Cart-item__price {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-left: 2rem;
+}
