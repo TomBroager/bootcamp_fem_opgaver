@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opgave 2 - niveau 2</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Produkt Kurv</title>
 
-    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/blocks/Main-content.css" />
+		<link rel="stylesheet" href="css/blocks/Cart-section.css" />
+		<link rel="stylesheet" href="css/blocks/Cart-list.css" />
+		<link rel="stylesheet" href="css/blocks/Cart-item.css" />
+		<link rel="stylesheet" href="css/blocks/Item-counter.css" />
+	</head>
+	<body>
+		<main class="Main-content">
+			<section class="Cart-section">
+				<h1 class="Cart-section__title">Produkt Kurv</h1>
 
-    <!-- ========== style link Product card ========== -->
-    <link rel="stylesheet" href="commond.blocks/Product-card/Product-card.css">
-    <link rel="stylesheet" href="commond.blocks/Product-card/__figure/Product-card__figure.css">
-    <link rel="stylesheet" href="commond.blocks/Product-card/__image/Product-card__image.css">
+				<ul id="products-wrapper" class="Cart-list">
+					<!-- <li class="Cart-item">
+						<img src="img/1.jpg" alt="" class="Cart-item__img" />
+						<h3 class="Cart-item__title">Sko</h3>
 
-</head>
-<body>
+						<section class="Item-counter">
+							<button id="counter-decrease" class="Item-counter__button">
+								-
+							</button>
+							<p class="Item-counter__counter-text">0</p>
+							<button id="counter-increase" class="Item-counter__button">
+								+
+							</button>
+						</section>
 
-    <div class="Product-card">
-        <figure class="Product-card__figure">
-            <img src="assets/Ølspand1.jpg" alt="Gavekurv med øl" class="Product-card__image">
-        </figure>
+						<p class="Cart-item__price">495kr</p>
+						<p class="Cart-item__price-total">0kr</p>
+					</li>
 
-        <article class="Product-card__article">
-            <h2 class="Product-card__heading">Ølspand 1</h2>
-            <p class="Product-card__price">100,-</p>
-        </article>
+					<li class="Cart-item">
+						<img src="img/2.jpg" alt="" class="Cart-item__img" />
+						<h3 class="Cart-item__title">Hovedtelefoner</h3>
 
-        <button class="Product-card__minus-btn">-</button>
-        <button class="Product-card__plus-btn">+</button>
-    </div>
-    
-</body>
+						<section class="Item-counter">
+							<button id="counter-decrease" class="Item-counter__button">
+								-
+							</button>
+							<p class="Item-counter__counter-text">0</p>
+							<button id="counter-increase" class="Item-counter__button">
+								+
+							</button>
+						</section>
+
+						<p class="Cart-item__price">495kr</p>
+						<p class="Cart-item__price-total">0kr</p>
+					</li>
+
+					<li class="Cart-item">
+						<img src="img/3.jpg" alt="" class="Cart-item__img" />
+						<h3 class="Cart-item__title">Smart Watch</h3>
+
+						<section class="Item-counter">
+							<button id="counter-decrease" class="Item-counter__button">
+								-
+							</button>
+							<p class="Item-counter__counter-text">0</p>
+							<button id="counter-increase" class="Item-counter__button">
+								+
+							</button>
+						</section>
+
+						<p class="Cart-item__price">495kr</p>
+						<p class="Cart-item__price-total">0kr</p>
+					</li> -->
+				</ul>
+			</section>
+		</main>
+		<script src="js/script.js"></script>
+	</body>
 </html>
