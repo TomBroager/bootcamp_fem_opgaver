@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const button = document.querySelector('#my-button');
     
-    const buttonColor = ['green', 'yellow'];
+    const buttonColor = ['blue', 'yellow'];
     
     button.style.backgroundColor = buttonColor[0];
     
